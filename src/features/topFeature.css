@@ -1,0 +1,105 @@
+.top-feature {
+    padding: 50px 0;
+    /* background-image: url(../assets//images/fullColor-bg.jpg); */
+    background-image: linear-gradient(to right, #fdfbfb, #ebedee);
+    background-repeat: no-repeat ;
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+}
+
+.left-feature {
+    display: flex;
+   flex-direction: column;
+   /* justify-content: center; */
+   text-align: -webkit-center;
+}
+.topFeaturesInside {
+    font-family: 'Exo 2', sans-serif;
+    font-size: 34px;
+    font-weight: 400;
+    margin-bottom: 100px;
+}
+
+.growOnline {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 30px;
+
+}
+
+.build-title {
+    font-family: 'Fredoka One', cursive;
+}
+
+.right-feature {
+    display: flex;
+    position: relative;
+}
+
+.image-feature {
+    position: absolute;
+    width: 300px;
+    height:300px;
+    object-fit: cover;
+    top: 20%;
+    right: 30%; 
+    border-radius: 10px;
+    border: 12px solid rgb(251, 251, 251);
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+
+}
+
+.card-icon {
+    margin-right: 10px;
+    width: 100px;height: 100px;
+    border-radius: 10px;
+    /* border-radius: 5px;box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px; */
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    text-align: center;
+    justify-items: center;
+    font-size: 12px;
+}
+
+    .icon-header {
+        position: absolute;
+        top: 0%;
+        right: 60%;
+    }
+
+    .icon-sub {
+    position: absolute;
+    top: 2%;
+    right: 40%;
+    }
+
+    .icon-posts {
+    position: absolute;
+    top: 30%;
+    right: 20%;
+    }
+
+    .icon-slider {
+    position: absolute;
+    bottom: 12%;
+    right: 25%;
+    }
+
+    .icon-image {
+    position: absolute;
+    top: 30%;
+    right: 70%;
+    }
+
+    .icon-logo {
+        position: absolute;
+        bottom: 10%;
+         right: 50%;
+    }
+
+
+    .card-icon > i {
+    
+    font-size: 70px;
+    
+    margin: 5px;
+}
