@@ -1,0 +1,31 @@
+.singleStory {
+    padding: 0 470px;
+}
+
+.singleStory__title {
+    margin-bottom: 130px;
+    margin-top:70px;
+}
+
+.singleStory__title-Lg {
+    font-size: 34px;
+    font-weight: 600;
+}
+
+.singleStory__title-Sm {
+    color: #555;
+}
+
+.singleStory__description {
+    text-align: justify;
+    width: 700px;
+    margin:0 0 100px 40px;
+
+}
+
+.singleStory__img {
+    width: 700px;
+    height: 360px;
+    margin: 60px 0 ;
+}
+

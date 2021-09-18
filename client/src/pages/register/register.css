@@ -1,0 +1,80 @@
+
+.register{ 
+    text-align: center;
+    text-align: -webkit-center;
+    display: flex;
+    height: 1000px;
+    flex-direction: column;
+    align-items: center;
+    place-content: center;
+    background-image: url(../../assets/images/caoBang.jpeg);
+    background-repeat: no-repeat;
+    /* object-fit: cover; */
+    background-size: cover;
+    color: #fff;
+    position: relative;
+    
+}
+    
+/* .register__bg {
+    box-shadow: rgba(246, 246, 246, 1) 0px 5px 15px;
+   
+    width: 600px;
+    height: 600px;
+    border-radius: 10px;
+} */
+
+.register__title {
+    font-size:60px;
+    margin-bottom: 80px;
+    font-family: 'Courier New', Courier, monospace;
+    
+}
+
+.register__form-email {
+    display: flex;
+    margin-bottom: 50px;
+    align-items: center;
+    justify-content: center;
+    /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
+   
+
+}
+
+.register__form {
+    width: 500px;
+  
+}
+
+.register__form-emailIcon {
+    margin-right: 20px;
+    font-size: 24px;
+}
+
+
+.register__form-passIcon {
+    margin-right: 20px;
+    font-size: 24px;
+
+}
+
+.btnregisterRegister {
+    width: 92%;
+    float: right;
+}
+
+.btnRegister {
+    position: absolute;
+    top: 5%;
+    right: 4%;
+    background-color: lightcoral;
+    color: white;
+}
+
+.btnRegister:hover {
+    color: white;
+}
+
+.btnRegister:hover {
+    box-shadow: 0 0 0 0.2rem rgb(243 33 43 / 55%);
+}

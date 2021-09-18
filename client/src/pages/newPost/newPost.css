@@ -1,0 +1,47 @@
+.newPost {
+    margin: 100px 0 80px 0;
+}
+
+.newPost__header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.inputnewPost {
+    border: none;
+    outline: none;
+    border-bottom: 1px solid rgb(128, 128, 128);
+    width: 400px;
+}
+
+.newPost__img {
+    width: 1200px;
+    height: 300px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.newPost__form {
+    text-align: center;
+    
+}
+
+.newPost__publish-btn {
+    text-align: center;
+}
+
+.fileInput > i {
+    font-size: 24px;
+}
+
+.newPost__button {
+    cursor: pointer;
+}
+
+.newPost__button>i {
+    font-size:30px;
+}
+
+.newPost__button>i:hover {
+   color: rgb(62, 168, 255)
+}

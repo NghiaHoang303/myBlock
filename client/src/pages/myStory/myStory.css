@@ -1,0 +1,76 @@
+.myStory {
+    /* padding: 20px; */
+    margin-top: 60px;
+    box-sizing: border-box;
+   
+}
+
+.title {
+    /* background-image: url(../../assets/images/mu-cang-chai-northern-vietnam.jpg); */
+    text-align: -webkit-center;
+
+}
+.title__Lg {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 80px;
+    font-weight: 600;
+    text-align: center;
+    margin: 20px 0;
+    color: #666;
+}
+
+.title__Sm {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    text-align: center;
+    justify-items: center;
+    margin-bottom:160px;
+    color: #333;
+    display: block;
+    width: 900px;
+
+
+}
+
+
+.storyContent {
+    padding: 0 300px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    /* width: 1230px; */
+}
+
+.storyContent__left {
+    /* margin-right: 10px; */
+    
+}
+
+.storyContent__right {
+    /* margin-right: 10px; */
+}
+
+.card-content {
+    /* text-align: center; */
+}
+
+.card-content__describe {
+    display: block;
+    margin: 10px 0;
+    font-size: 24px;
+    font-weight: 600;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.card-content__time {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #999;
+}
+
+.img-card {
+    /* max-width: 700px; */
+    height:340px;
+    width: 550px;
+    border-radius: 10px;
+}

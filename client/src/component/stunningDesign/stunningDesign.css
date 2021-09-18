@@ -1,0 +1,59 @@
+.stunning-design {
+    margin: 200px 0px 10px 0px;
+    background-image: url(../..//assets/images/gray-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 0;
+}
+
+.stunning-design__title {
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.stunning-design__title-Lg {
+    font-size: 40px;
+    font-weight: 400;
+    font-family: 'Kaushan Script', cursive;
+
+   
+}
+
+.stunning-design__title-Sm {
+    font-size: 24px;
+    font-family: 'Lora', serif;
+}
+
+.stunning-design__body  {
+    display: flex;
+    padding: 0px 200px
+}
+
+.stunning-design__list {
+    list-style: none;
+    justify-content: space-between;
+}
+
+.stunning-design__item {
+    justify-items: center;
+    display: grid;
+   margin-bottom: 100px;
+   font-family: 'Exo 2', sans-serif;
+   font-size: 16px;
+}
+
+.stunning-design__image {
+    border-radius: 5px;
+    margin-bottom: 20px;
+    height: 200px;
+    width: 400px;
+    z-index: 0;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    transition-duration: 0.4s ease;
+    cursor: pointer;
+} 
+
+.stunning-design__image:hover {
+    transition-duration: 0.4s;
+    transform: scale(1.08);
+}

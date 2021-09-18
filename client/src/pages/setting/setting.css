@@ -1,0 +1,41 @@
+.setting {
+  padding: 40px ;
+}
+
+.setting__avatar {
+
+}
+
+.setting_avatar-img {
+    width: 100px; height: 100px;
+    border-radius: 20px;
+    margin:0 20px 40px 0;
+}
+
+.setting__avatar-icon {
+    font-size: 40px; 
+    border-radius: 50%;
+    color: rgb(246, 105, 140)
+}
+
+.setting__form {
+   /* max-width: 1000px; */
+}
+
+.setting__input {
+    outline: none;
+    border: none;
+    border-bottom:  1px solid rgb(138, 138, 138);
+
+    display: block;
+    width: 100%;
+    height: calc(1.5em + .75rem + 2px);
+    padding: .4rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}

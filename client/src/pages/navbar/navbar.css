@@ -1,0 +1,72 @@
+.navbar {
+    padding:0 50px;
+}
+
+.navbar__about {
+  
+}
+
+.navbar__about-name {
+    text-align: center;
+    border-top: 1px solid rgb(149, 149, 149);
+    border-bottom: 1px solid rgb(149, 149, 149);
+    margin: 0px 0 50px 0;
+    line-height: 50px;
+}
+
+.navbar__img {
+    width: 400px;
+    height: 300px;
+}
+
+.navbar__category {
+  
+
+}
+
+.navbar__category-name {
+    text-align: center;
+    border-top: 1px solid rgb(149, 149, 149);
+    border-bottom: 1px solid rgb(149, 149, 149);
+    margin: 50px 0 20px 0;
+    line-height: 50px;
+    width: 400px;
+}
+
+.navbar__category-action {
+    
+}
+
+.navbar__category-common {
+    color:rgb(122, 122, 122);
+    display: block;
+    font-size: 18px;
+    transition: 0.3s ease;
+    line-height: 40px
+}
+
+.navbar__category-common:hover {
+    color:rgb(59, 59, 59);
+    text-decoration: none;
+    transform: scale(1.08) translateX(16px)
+}
+
+
+.category-action__life {
+}
+
+.category-action__music {
+
+}
+
+.category-action__book {
+
+}
+
+.category-action__sport {
+
+}
+
+.category-action__style {
+
+}

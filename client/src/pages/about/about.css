@@ -1,0 +1,73 @@
+.about{
+    margin: 168px 300px;
+}
+
+.about__content {
+
+}
+
+.about__content-left {
+
+}
+
+.about__content-right {
+    margin-top: 100px;
+}
+
+.about__content-title {
+    font-size: 90px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 800;
+    display: flex;
+    margin-left: -100px;
+}
+
+.about__content-description {
+    text-align: justify;
+    line-height: 40px;    
+    margin-top:50px;
+}
+
+.about__content-img {
+    width: 700px; 
+    height: 1200px;
+}
+
+.letCollab {
+    background-image: url(../../assets/images/doiChe.jpg);
+    height: 740px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.letCollab__title {
+    font-size: 100px;
+    font-weight: 700;
+    font-family: 'Courier New', Courier, monospace;
+    color: #fff;
+    display: block; 
+    width: 500px;
+    margin-left: 300px;
+}
+
+.btn-contact {
+    width: 120px;
+    height: 50px;
+    background-color: #fff;
+    color: #444;
+    outline: none;
+    border: none;
+    margin-left: 280px;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.btn-contact:hover {
+    background-color: rgb(223, 223, 223);
+}
+
