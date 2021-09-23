@@ -3,3 +3,7 @@
     color: #888;
     font-size: 14px;
 }
+
+.card-img-top {
+    max-height: 220px;
+}

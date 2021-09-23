@@ -55,15 +55,29 @@ export default function Post() {
 
     return (
         <div className="post row">
-            <div className="col-9">
-                <div className="post__header">
+            <div className="col-9 row">
+                <div className="post__header col-6">
                     {
                         post.photo && (
                             <img src= {PF + post.photo} alt="" className="post__header-img" />
                         )
                     }
                 </div>
+
                 
+                <div className="col-6">
+                    <div className="start">
+                        <i className="fas fa-star"></i>
+                        <i className="fas fa-star"></i>
+                        <i className="fas fa-star"></i>
+                        <i className="fas fa-star"></i>
+                        <i className="fas fa-star"></i>
+
+                    </div>
+                    <div>
+                        {title}
+                    </div>
+                </div>
                 <div className="post__content">
                     <div className="post__content-description row">
                         {updateMode ? <input className= "singlePostTitleInput" value = {title} 
@@ -71,7 +85,7 @@ export default function Post() {
                         autoFocus
                         /> :(
                     <div className = "row">
-                        <div className="post__content-name col-11">
+                        <div className="post__content-name col-10">
                         {title}
                         </div>
                         <div className="post__content-function col-1">

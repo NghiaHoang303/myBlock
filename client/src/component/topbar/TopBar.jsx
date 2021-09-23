@@ -11,39 +11,48 @@ function TopBar(props, event) {
         dispatch({type: "LOGOUT"})
     }
     return (
-        <div className="top">
-            
-            <div className="topLeft">
-                <a href="https://www.facebook.com/nghiengiaycu"> 
-                    <i class="topIcon fab fa-facebook-square"></i>
-                </a>
-                <i class="topIcon fab fa-twitter-square"></i>
-                <i class="topIcon fab fa-pinterest-square"></i>
-                <i class="topIcon fab fa-instagram-square"></i>
-
-            </div>
-            <div className="topCenter">
-                <ul className='topList'>
-                    <li className="topListItem">
-                        <a href="/" >HOME</a>
-                    </li>
-                    <li className="topListItem">
-                        <Link to="/about" >ABOUT</Link>
-                    </li>
-                    <li className="topListItem">
-                        <Link to="/contact" >CONTACT</Link>
-                    </li>
-                    <li className="topListItem">
-                        <Link to="/new-post" >WRITE</Link>
-                    </li>
-                    <li className="topListItem">
-                        <Link to="/register" onClick= {handleLogout}>
-                            {user && 'LOGOUT'}
-                        </Link>
-                    </li>
-                </ul>
-            </div>
+        <div className="">
+           
+            <div className="top">
             <div className="topRight">
+                <a href = '#' className="titleShop">Tiệm giày cũ Quảng Trị</a>
+                <div className="phoneNumber">
+                <i className="fas fa-phone-square-alt"></i>
+                    <span>   Hotline: </span>
+                    <a href ="tel:+84988090489">0988090489</a>
+                </div>
+            </div>
+                <div className="topLeft">
+                    <a href="https://www.facebook.com/nghiengiaycu"> 
+                        <i class="topIcon fab fa-facebook-square"></i>
+                    </a>
+                    <i class="topIcon fab fa-twitter-square"></i>
+                    <i class="topIcon fab fa-pinterest-square"></i>
+                    <i class="topIcon fab fa-instagram-square"></i>
+
+                </div>
+                <div className="topCenter">
+                    <ul className='topList'>
+                        <li className="topListItem">
+                            <a href="/" >HOME</a>
+                        </li>
+                        <li className="topListItem">
+                            <Link to="/about" >ABOUT</Link>
+                        </li>
+                        <li className="topListItem">
+                            <Link to="/contact" >CONTACT</Link>
+                        </li>
+                        <li className="topListItem">
+                            <Link to="/new-post" >WRITE</Link>
+                        </li>
+                        <li className="topListItem">
+                            <Link to="/register" onClick= {handleLogout}>
+                                {user && 'LOGOUT'}
+                            </Link>
+                        </li>
+                    </ul>
+                </div>
+                <div className="topRight">
                 {user ? (
                     <Link to="/setting"><img className='topImg' src={PF + user.profilePic}
                     alt='my-image' /></Link>
@@ -60,6 +69,8 @@ function TopBar(props, event) {
                 <i className="topIconSearch fas fa-search"></i>
                 
             </div>
+            </div>
+            
         </div>
     )
 }
