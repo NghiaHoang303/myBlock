@@ -24,9 +24,11 @@ import {
   Route,
   Link
 } from "react-router-dom";
+import { useContext } from "react";
+import { Context } from "./context/Context";
 
 function App() {
-  const user = false;
+  const {user} = useContext(Context);
   return (
     <Router>
       <TopBar/>
@@ -79,7 +81,7 @@ function App() {
         {user ? <NewPost/> : <Register/>}
         </Route>
 
-        <Route exact  path="/post">
+        <Route exact  path="/post/:id">
             <Post/>
         </Route>
 

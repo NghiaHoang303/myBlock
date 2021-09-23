@@ -15,7 +15,8 @@
 .setting__avatar-icon {
     font-size: 40px; 
     border-radius: 50%;
-    color: rgb(246, 105, 140)
+    color: rgb(246, 105, 140);
+    cursor: pointer;
 }
 
 .setting__form {
@@ -38,4 +39,12 @@
     background-color: #fff;
     background-clip: padding-box;
     transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.settingsTitle {
+    display: flex;
+    justify-content: space-between;
+    color:rgb(246, 105, 140);
+    font-size: 20px;
+    margin-bottom: 20px;
 }

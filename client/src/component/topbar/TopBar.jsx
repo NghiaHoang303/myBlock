@@ -1,14 +1,22 @@
-import React from 'react'
-import PropTypes from 'prop-types'
+import React, { useContext } from 'react'
 import './topbar.css'
 import { Link } from 'react-router-dom'
+import { Context } from '../../context/Context';
+
 
 function TopBar(props, event) {
-    const user = false;
+    const {user, dispatch} = useContext(Context);
+    const PF = "http://localhost:5000/images/";
+    const handleLogout = () => {
+        dispatch({type: "LOGOUT"})
+    }
     return (
         <div className="top">
+            
             <div className="topLeft">
-                <i class="topIcon fab fa-facebook-square"></i>
+                <a href="https://www.facebook.com/nghiengiaycu"> 
+                    <i class="topIcon fab fa-facebook-square"></i>
+                </a>
                 <i class="topIcon fab fa-twitter-square"></i>
                 <i class="topIcon fab fa-pinterest-square"></i>
                 <i class="topIcon fab fa-instagram-square"></i>
@@ -26,10 +34,10 @@ function TopBar(props, event) {
                         <Link to="/contact" >CONTACT</Link>
                     </li>
                     <li className="topListItem">
-                        <Link to="/post" >WRITE</Link>
+                        <Link to="/new-post" >WRITE</Link>
                     </li>
                     <li className="topListItem">
-                        <Link to="/logout" >
+                        <Link to="/register" onClick= {handleLogout}>
                             {user && 'LOGOUT'}
                         </Link>
                     </li>
@@ -37,8 +45,8 @@ function TopBar(props, event) {
             </div>
             <div className="topRight">
                 {user ? (
-                    <a href="setting"><img className='topImg' src='https://scontent.fdad1-1.fna.fbcdn.net/v/t1.6435-9/30652335_2131096027123903_2104053046077030400_n.jpg?_nc_cat=100&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=rljraiPyA5AAX9u6B2M&tn=sL0k8ps0EhJ05wno&_nc_ht=scontent.fdad1-1.fna&oh=e55092b4a7ae13f83f274bafb37cde02&oe=6162B4B0'
-                    alt='my-image' /></a>
+                    <Link to="/setting"><img className='topImg' src={PF + user.profilePic}
+                    alt='my-image' /></Link>
                 ): (
                     <ul className="topList__action-list">
                         <li className="topList__action-item">

@@ -1,0 +1,11 @@
+.show__right {
+    display: inline-block;
+}
+
+.show__right-list {
+    text-align: -webkit-center;
+}
+
+.show__right-item {
+    margin-bottom: 40px;
+}
