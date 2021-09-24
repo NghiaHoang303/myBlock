@@ -21,6 +21,19 @@ const PostSchema =  new mongoose.Schema({
     categories: {
         type: Array, 
         required: false
+    }, 
+    price: { 
+        type: Number,
+        required: true,
+    },
+    size: {
+        type: Number,
+        required: true,
+    },
+    codeProduct: {
+        type: String,
+        required: true,
+        unique: true,
     }
 },{timestamps: true,})
 
