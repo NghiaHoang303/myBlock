@@ -8,6 +8,10 @@ export default function NewPost() {
     const [title, setTitle] = useState("");
     const [desc, setDesc] = useState("");
     const [file, setFile] = useState("");
+    const [price, setPrice] = useState(0);
+    const [size, setSize] = useState(0);
+    const [codeProduct, setCodeProduct] = useState("")
+
 
     const {user} = useContext(Context);
     const handleSubmit = async (e) => {
@@ -16,7 +20,13 @@ export default function NewPost() {
             username: user.username,
             title,
             desc,
+            price,
+            size, 
+            codeProduct,
         };
+
+        console.log('user name',newPost.username)
+
         if(file) {
             const data = new FormData();
             const filename = Date.now() + file.name;
@@ -54,13 +64,28 @@ export default function NewPost() {
                         onChange={e => setFile(e.target.files[0])}
                     />
                     <div className="form-group">
-                        <input className='inputnewPost' placeholder="enter ..."
+                        <input className='inputnewPost' placeholder="title"
                         onChange= {e => setTitle(e.target.value)}
                         ></input>
                     </div>
                     <div className="form-group">
-                        <input className='inputnewPost' placeholder="enter ..."
+                        <input className='inputnewPost' placeholder="description product"
                             onChange= {e => setDesc(e.target.value)}
+                        ></input>
+                    </div>
+                    <div className="form-group">
+                        <input className='inputnewPost' placeholder="prices: 2$"
+                            onChange= {e => setPrice(e.target.value)}
+                        ></input>
+                    </div>
+                    <div className="form-group">
+                        <input className='inputnewPost' placeholder="size: 42"
+                            onChange= {e => setSize(e.target.value)}
+                        ></input>
+                    </div>
+                    <div className="form-group">
+                        <input className='inputnewPost' placeholder="codeProduct: A123"
+                            onChange= {e => setCodeProduct(e.target.value)}
                         ></input>
                     </div>
                     
