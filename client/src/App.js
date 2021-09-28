@@ -26,6 +26,8 @@ import {
 } from "react-router-dom";
 import { useContext } from "react";
 import { Context } from "./context/Context";
+import Join from "./component/chatBot/Join";
+import Chat from "./component/chatBot/Chat";
 
 function App() {
   const {user} = useContext(Context);
@@ -85,7 +87,6 @@ function App() {
             <Post/>
         </Route>
 
-
         <Route exact  path="/about">
             <About/>
         </Route>
@@ -97,6 +98,15 @@ function App() {
         <Route exact  path="/my-story">
             <MyStory/>
         </Route>
+
+        <Route exact path="/">
+            <Join/>
+        </Route>
+
+        <Route  path="/chat-bot">
+          <Chat/>
+        </Route>
+
       </Switch>
      
       <Footer/>

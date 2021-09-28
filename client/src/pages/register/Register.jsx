@@ -32,7 +32,7 @@ export default function Register() {
                 <div className="register__form">
                     <form onSubmit= {handleSubmit}>
 
-                    <div className="register__form-email">
+                        <div className="register__form-email">
                             <i class="fas fa-user register__form-emailIcon"></i>
                             <input type="text" className="form-control" placeholder="User name" 
                             onChange = {(e) => setUsername(e.target.value) }
@@ -65,6 +65,7 @@ export default function Register() {
                                 Login
                             </Link>
                         {/* </div> */}
+                        
                     </form>
                 </div>
          

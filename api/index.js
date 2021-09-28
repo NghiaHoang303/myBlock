@@ -3,14 +3,20 @@ const app = express();
 const dotenv = require('dotenv');
 const mongoose = require('mongoose');
 const multer = require('multer'); 
+const socketio = require('socket.io');
+const http = require('http');
+const path = require('path');
 
 const authRoute = require('./routes/auth')
 const userRoute = require('./routes/users')
 const postRoute = require('./routes/posts')
 const categoryRoute = require('./routes/categories')
-const path = require('path')
+const messageRoute = require('./routes/message')
 
+const router = require('./routes/router')
 
+const server = http.createServer(app);
+const io = socketio(server)
 dotenv.config()
 app.use(express.json())
 app.use("/images", express.static(path.join(__dirname, '/images')))
@@ -30,10 +36,6 @@ mongoose.connect('mongodb://localhost:27017/my_blog', {
 }).then(console.log('Connect to mongoDb')) 
   .catch((err) => console.log(err));
 
-// app.use('/nghiahoang',(req, res) => {
-//     console.log("Hey this is Nghia Hoang url");
-// })
-
 const storage = multer.diskStorage({
   destination: (req, file, cb) => {
     cb(null, "images")
@@ -50,10 +52,21 @@ app.post("/api/upload", upload.single("file"),
   }
 )
 
+// socket.io connect 
+io.on("connect",(socket) => {
+  console.log("We have a user connected !!!");
+  socket.on("disconnect", () => {
+    console.log('User had left !!!');
+  })  
+})
+
 app.use("/api/auth", authRoute)
 app.use("/api/users", userRoute)
 app.use("/api/posts", postRoute);
 app.use("/api/categories", categoryRoute);
+app.use("/api/message", messageRoute);
+
+app.use(router);
 
 // console.log('hello nghia hoang win every ');
 app.listen("5000", ()=> {

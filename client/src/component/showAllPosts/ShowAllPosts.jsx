@@ -5,7 +5,6 @@ import './showAllPosts.css'
 import OnePost from '../onePost/OnePost'
 export default function ShowAllPosts({posts}) {
     
-
     return (
         <div className="show row  " >
             <div className="show__right col-9">
